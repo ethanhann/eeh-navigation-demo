@@ -16,11 +16,11 @@ angular.module('demo')
     };
 
     $scope.searchSubmit = function (query) {
-        $state.go('demo.authenticated.search', { query: query });
+        $state.go('demo.navigation.search', { query: query });
     };
 
     $scope.navbarBrand = {
         text: 'eeh-navigation Demo',
-        state: 'demo.authenticated.home'
+        state: 'demo.navigation.home'
     };
 });

@@ -1,5 +1,5 @@
 angular.module('demo')
-.controller('AuthenticatedCtrl', function ($scope, $state, $window, eehNavigation) {
+.controller('NavigationCtrl', function ($scope, $state, $window, eehNavigation) {
     'use strict';
     eehNavigation.menuItem('menuOne.user').text = 'Ethan';
 

@@ -13,36 +13,36 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             abstract: true,
             templateUrl: 'app/app.html'
         })
-        .state('demo.authenticated', {
+        .state('demo.navigation', {
             abstract: true,
-            controller: 'AuthenticatedCtrl',
-            templateUrl: 'app/authenticated/authenticated.html'
+            controller: 'NavigationCtrl',
+            templateUrl: 'app/navigation/navigation.html'
         })
-        .state('demo.authenticated.home', {
+        .state('demo.navigation.home', {
             url: '/',
             templateUrl: 'app/partials/home.html'
         })
-        .state('demo.authenticated.blank', {
+        .state('demo.navigation.blank', {
             url: '/blank',
             templateUrl: 'app/partials/blank.html'
         })
-        .state('demo.authenticated.alpha', {
+        .state('demo.navigation.alpha', {
             url: '/alpha',
             templateUrl: 'app/partials/alpha.html'
         })
-        .state('demo.authenticated.beta', {
+        .state('demo.navigation.beta', {
             url: '/beta',
             templateUrl: 'app/partials/beta.html'
         })
-        .state('demo.authenticated.knight', {
+        .state('demo.navigation.knight', {
             url: '/knight',
             templateUrl: 'app/partials/knight.html'
         })
-        .state('demo.authenticated.bishop', {
+        .state('demo.navigation.bishop', {
             url: '/bishop',
             templateUrl: 'app/partials/bishop.html'
         })
-        .state('demo.authenticated.search', {
+        .state('demo.navigation.search', {
             url: '/search?query',
             controller: 'SearchCtrl',
             templateUrl: 'app/search/search.html'
@@ -54,7 +54,7 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuOne.home', {
             text: 'Home',
             iconClass: 'glyphicon-home',
-            state: 'demo.authenticated.home',
+            state: 'demo.navigation.home',
             weight: -10
         })
         .menuItem('menuOne.hiddenChildren', {
@@ -75,7 +75,7 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuOne.user.blank', {
             text: 'Blank',
             iconClass: 'glyphicon-star',
-            state: 'demo.authenticated.blank'
+            state: 'demo.navigation.blank'
         })
         .menuItem('menuOne.user.example-com', {
             text: 'example.com',
@@ -129,13 +129,13 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuTwo.home', {
             text: 'Home',
             iconClass: 'glyphicon-home',
-            state: 'demo.authenticated.home',
+            state: 'demo.navigation.home',
             weight: 0
         })
         .menuItem('menuTwo.blank', {
             text: 'Blank',
             iconClass: 'glyphicon-star',
-            state: 'demo.authenticated.blank'
+            state: 'demo.navigation.blank'
         })
         .menuItem('menuTwo.click', {
             text: 'Click',
@@ -167,12 +167,12 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuTwo.multilevel.firstlevel1', {
             text: 'First level - 1',
             iconClass: 'glyphicon-file',
-            state: 'demo.authenticated.blank'
+            state: 'demo.navigation.blank'
         })
         .menuItem('menuTwo.multilevel.firstlevel2', {
             text: 'First level - 2',
             iconClass: 'glyphicon-file',
-            state: 'demo.authenticated.blank'
+            state: 'demo.navigation.blank'
         })
         .menuItem('menuTwo.multilevel.firstlevel3', {
             text: 'First level - 3',
@@ -182,12 +182,12 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuTwo.multilevel.firstlevel3.secondlevel1', {
             text: 'Second level - 1: Alpha',
             iconClass: 'glyphicon-file',
-            state: 'demo.authenticated.alpha'
+            state: 'demo.navigation.alpha'
         })
         .menuItem('menuTwo.multilevel.firstlevel3.secondlevel2', {
             text: 'Second level - 2',
             iconClass: 'glyphicon-file',
-            state: 'demo.authenticated.blank'
+            state: 'demo.navigation.blank'
         })
         .menuItem('menuTwo.multilevel.firstlevel4', {
             text: 'First level - 4',
@@ -197,17 +197,17 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuTwo.multilevel.firstlevel4.secondlevel1', {
             text: 'Second level - 1: Beta',
             iconClass: 'glyphicon-file',
-            state: 'demo.authenticated.beta'
+            state: 'demo.navigation.beta'
         })
         .menuItem('menuTwo.multilevel.firstlevel4.secondlevel2', {
             text: 'Second level - 2',
             iconClass: 'glyphicon-file',
-            state: 'demo.authenticated.blank'
+            state: 'demo.navigation.blank'
         })
         .menuItem('menuTwo.multilevel.firstlevel5', {
             text: 'First level - 5: Home',
             iconClass: 'glyphicon-file',
-            state: 'demo.authenticated.home'
+            state: 'demo.navigation.home'
         })
         .menuItem('menuTwo.chess', {
             text: 'Chess',
@@ -217,12 +217,12 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuTwo.chess.knight', {
             text: 'Knight',
             iconClass: 'glyphicon-knight',
-            state: 'demo.authenticated.knight'
+            state: 'demo.navigation.knight'
         })
         .menuItem('menuTwo.chess.bishop', {
             text: 'Bishop',
             iconClass: 'glyphicon-bishop',
-            state: 'demo.authenticated.bishop'
+            state: 'demo.navigation.bishop'
         });
 
     $translateProvider

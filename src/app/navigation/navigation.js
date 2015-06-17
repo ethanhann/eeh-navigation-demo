@@ -23,4 +23,12 @@ angular.module('demo')
         text: 'eeh-navigation Demo',
         state: 'demo.navigation.home'
     };
+
+    eehNavigation.menuItem('menuTwo.createdInController', {
+        text: 'Created in Controller',
+        href: '/',
+        iconClass: 'glyphicon-star'
+    });
+
+    eehNavigation.menuItem('menuTwo.createdInController').isVisible = false;
 });

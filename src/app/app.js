@@ -13,6 +13,10 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             abstract: true,
             templateUrl: 'app/app.html'
         })
+        .state('demo.navigationMenu', {
+            url: '/navigation-menu',
+            templateUrl: 'app/navigation-menu/navigation-menu.html'
+        })
         .state('demo.navigation', {
             abstract: true,
             controller: 'NavigationCtrl',

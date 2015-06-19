@@ -15,20 +15,24 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             abstract: true,
             templateUrl: 'app/app.html'
         })
-        .state('demo.main', {
+        .state('demo.layout', {
+            abstract: true,
+            templateUrl: 'app/layout/layout.html'
+        })
+        .state('demo.layout.main', {
             url: '/',
             controller: 'MainController',
             templateUrl: 'app/main/main.html'
         })
-        .state('demo.navigationMenu', {
+        .state('demo.layout.navigationMenu', {
             url: '/navigation-menu',
             templateUrl: 'app/navigation-menu/navigation-menu.html'
         })
-        .state('demo.navigationMenuSuperfish', {
+        .state('demo.layout.navigationMenuSuperfish', {
             url: '/navigation-menu-with-superfish',
             templateUrl: 'app/navigation-menu/superfish.html'
         })
-        .state('demo.navigationMenuMetisMenu', {
+        .state('demo.layout.navigationMenuMetisMenu', {
             url: '/navigation-menu-with-metis-menu',
             templateUrl: 'app/navigation-menu/metis-menu.html'
         })
@@ -75,6 +79,12 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             iconClass: 'glyphicon-home',
             state: 'demo.navigation.home',
             weight: -10
+        })
+        .menuItem('menuOne.examples', {
+            text: 'Other Examples',
+            iconClass: 'glyphicon-list',
+            state: 'demo.layout.main',
+            weight: -9
         })
         .menuItem('menuOne.hiddenChildren', {
             text: 'Hidden Children'
@@ -243,6 +253,30 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             iconClass: 'glyphicon-bishop',
             state: 'demo.navigation.bishop'
         });
+
+    eehNavigationProvider
+        .menuItem('menuThree.examples', {
+            text: 'Examples',
+            iconClass: 'glyphicon-list',
+            state: 'demo.layout.main'
+        })
+        .menuItem('menuThree.navigationMenu', {
+            text: 'Framework-Agnostic Menu',
+            state: 'demo.layout.navigationMenu'
+        })
+        .menuItem('menuThree.navigationMenuSuperfish', {
+            text: 'Superfish Menu',
+            state: 'demo.layout.navigationMenuSuperfish'
+        })
+        .menuItem('menuThree.navigationMenuMetisMenu', {
+            text: 'metisMenu Menu',
+            state: 'demo.layout.navigationMenuMetisMenu'
+        })
+        .menuItem('menuThree.adminDashboard', {
+            text: 'Bootstrap Navbar and Sidebar',
+            state: 'demo.navigation.home'
+        })
+    ;
 
     $translateProvider
         .useSanitizeValueStrategy('escaped')

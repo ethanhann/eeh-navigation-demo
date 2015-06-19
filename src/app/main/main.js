@@ -10,19 +10,19 @@ angular.module('demo')
             },
                 {
                     image: 'eeh-navigation-menu.png',
-                    state: 'demo.navigationMenu',
+                    state: 'demo.layout.navigationMenu',
                     title: 'Framework-Agnostic Menu',
                     description: 'Use <strong>eeh-navigation-menu</strong> to build a custom menu.'
                 },
                 {
                     image: 'superfish.png',
-                    state: 'demo.navigationMenuSuperfish',
+                    state: 'demo.layout.navigationMenuSuperfish',
                     title: 'Superfish Menu',
                     description: 'Use <strong>eeh-navigation-menu</strong> with <a href="https://github.com/joeldbirch/superfish">Superfish</a>.'
                 }],
             [{
                 image: 'metis-menu.png',
-                state: 'demo.navigationMenuMetisMenu',
+                state: 'demo.layout.navigationMenuMetisMenu',
                 title: 'metisMenu Menu',
                 description: 'Use <strong>eeh-navigation-menu</strong> with <a href="https://github.com/onokumus/metisMenu">metisMenu</a>.'
             }]

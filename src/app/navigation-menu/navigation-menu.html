@@ -1,24 +1,25 @@
-<div class="container">
-    <h1 class="page-header">eeh-navigation-menu</h1>
+<div ng-include="'app/components/examples-menu/examples-menu.html'"></div>
 
-    <p>By default the <strong>eeh-navigation-menu</strong> directive outputs an unstyled, though functional, menu.
-    </p>
-    <div class="row">
-        <div class="col-sm-3">
-            <eeh-navigation-menu menu-name="'menuOne'"></eeh-navigation-menu>
-        </div>
+<h1 class="page-header">eeh-navigation-menu</h1>
+
+<p>By default the <strong>eeh-navigation-menu</strong> directive outputs an unstyled, though functional, menu.
+</p>
+<div class="row">
+    <div class="col-sm-3">
+        <eeh-navigation-menu menu-name="'menuOne'"></eeh-navigation-menu>
     </div>
+</div>
 
-    <h2>Style eeh-navigation-menu</h2>
+<h2>Style eeh-navigation-menu</h2>
 
-    <p>A tiny snippet of CSS can make the menu look a lot better. Note that the "navigation-menu" CSS class was added to
-        the directive for this example. The unstyled example does not have this CSS class.</p>
+<p>A tiny snippet of CSS can make the menu look a lot better. Note that the "navigation-menu" CSS class was added to
+    the directive for this example. The unstyled example does not have this CSS class.</p>
 
-    <div class="row">
-        <div class="col-sm-3">
-            <eeh-navigation-menu menu-name="'menuOne'" class="navigation-menu"></eeh-navigation-menu>
-        </div>
-        <div class="col-sm-9">
+<div class="row">
+    <div class="col-sm-3">
+        <eeh-navigation-menu menu-name="'menuOne'" class="navigation-menu"></eeh-navigation-menu>
+    </div>
+    <div class="col-sm-9">
             <pre class="lang-css">
 .navigation-menu ul {
     list-style: none;
@@ -42,6 +43,5 @@
     background-color: #eeeeee;
 }
             </pre>
-        </div>
     </div>
 </div>

@@ -21,7 +21,7 @@ angular.module('demo')
 
     $scope.navbarBrand = {
         text: 'eeh-navigation Demo',
-        state: 'demo.main'
+        state: 'demo.layout.main'
     };
 
     eehNavigation.menuItem('menuTwo.createdInController', {

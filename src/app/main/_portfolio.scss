@@ -1,0 +1,81 @@
+// Component borrowed from couscous.io
+
+@import "variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+.portfolio {
+    .portfolio-item {
+        margin: 0 0 15px;
+        right: 0;
+        .portfolio-link {
+            display: block;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+            .portfolio-hover {
+                @include background-opacity($brand-primary, 0.9);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all ease 0.5s;
+                &:hover {
+                    opacity: 1;
+                }
+                .portfolio-hover-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -12px;
+                    color: white;
+                    .fa {
+                        margin-top: -12px;
+                        color: #FFF;
+                    }
+                    h3,
+                    h4 {
+                        margin: 0;
+                    }
+                }
+            }
+            img {
+                border: 1px solid #ddd;
+            }
+        }
+        .portfolio-caption {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+            padding: 25px;
+            h4 {
+                text-transform: none;
+                margin: 0;
+            }
+            p {
+                font-style: italic;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+    * {
+        z-index: 2;
+    }
+}
+
+@media(min-width: 767px) {
+    .portfolio {
+        .portfolio-item {
+            margin: 0 0 30px;
+        }
+    }
+}

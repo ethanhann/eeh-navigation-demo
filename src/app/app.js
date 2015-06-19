@@ -1,8 +1,10 @@
 'use strict';
 
 angular.module('demo', [
+    'eehMetisMenu',
     'eehNavigation',
-    'pascalprecht.translate',
+    'eehSuperfish',
+    'ngSanitize',
     'ui.bootstrap',
     'ui.router'
 ]).config(['$stateProvider', '$translateProvider', '$urlRouterProvider', 'eehNavigationProvider',
@@ -13,17 +15,30 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             abstract: true,
             templateUrl: 'app/app.html'
         })
+        .state('demo.main', {
+            url: '/',
+            controller: 'MainController',
+            templateUrl: 'app/main/main.html'
+        })
         .state('demo.navigationMenu', {
             url: '/navigation-menu',
             templateUrl: 'app/navigation-menu/navigation-menu.html'
         })
+        .state('demo.navigationMenuSuperfish', {
+            url: '/navigation-menu-with-superfish',
+            templateUrl: 'app/navigation-menu/superfish.html'
+        })
+        .state('demo.navigationMenuMetisMenu', {
+            url: '/navigation-menu-with-metis-menu',
+            templateUrl: 'app/navigation-menu/metis-menu.html'
+        })
         .state('demo.navigation', {
             abstract: true,
-            controller: 'NavigationCtrl',
+            controller: 'NavigationController',
             templateUrl: 'app/navigation/navigation.html'
         })
         .state('demo.navigation.home', {
-            url: '/',
+            url: '/navbar-sidebar',
             templateUrl: 'app/partials/home.html'
         })
         .state('demo.navigation.blank', {
@@ -273,3 +288,4 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         });
     $translateProvider.preferredLanguage('en');
 }]);
+

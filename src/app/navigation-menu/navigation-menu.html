@@ -1,24 +1,47 @@
-
 <div class="container">
-    <h1>JQuery Plugin Integration</h1>
+    <h1 class="page-header">eeh-navigation-menu</h1>
 
-    <h2>eeh-navigation-menu</h2>
+    <p>By default the <strong>eeh-navigation-menu</strong> directive outputs an unstyled, though functional, menu.
+    </p>
     <div class="row">
-        <eeh-navigation-menu menu-name="'menuOne'"></eeh-navigation-menu>
-    </div>
-
-    <h2>eeh-navigation-menu with Superfish Directive</h2>
-    <div class="row">
-        <eeh-navigation-menu menu-name="'menuTwo'" superfish></eeh-navigation-menu>
-    </div>
-
-    <h2>eeh-navigation-menu with MetisMenu Directive</h2>
-    <div class="row">
-        <div class="metis-menu-vertical">
-            <div class="sidebar">
-                <eeh-navigation-menu menu-name="'menuTwo'" metis-menu></eeh-navigation-menu>
-            </div>
+        <div class="col-sm-3">
+            <eeh-navigation-menu menu-name="'menuOne'"></eeh-navigation-menu>
         </div>
     </div>
 
+    <h2>Style eeh-navigation-menu</h2>
+
+    <p>A tiny snippet of CSS can make the menu look a lot better. Note that the "navigation-menu" CSS class was added to
+        the directive for this example. The unstyled example does not have this CSS class.</p>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <eeh-navigation-menu menu-name="'menuOne'" class="navigation-menu"></eeh-navigation-menu>
+        </div>
+        <div class="col-sm-9">
+            <pre class="lang-css">
+.navigation-menu ul {
+    list-style: none;
+}
+
+.navigation-menu > ul {
+    border: solid 1px #eeeeee;
+    background: #dddddd;
+    padding: 1em;
+}
+
+.navigation-menu ul li > a {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+}
+
+.navigation-menu ul li > a:focus,
+.navigation-menu ul li > a:hover {
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+            </pre>
+        </div>
+    </div>
 </div>

@@ -1,5 +1,5 @@
 angular.module('demo')
-.controller('NavigationCtrl', function ($scope, $state, $window, eehNavigation) {
+.controller('NavigationController', function ($scope, $state, $window, eehNavigation) {
     'use strict';
     eehNavigation.menuItem('menuOne.user').text = 'Ethan';
 
@@ -21,7 +21,7 @@ angular.module('demo')
 
     $scope.navbarBrand = {
         text: 'eeh-navigation Demo',
-        state: 'demo.navigation.home'
+        state: 'demo.main'
     };
 
     eehNavigation.menuItem('menuTwo.createdInController', {

@@ -1,0 +1,51 @@
+<header>
+    <div class="jumbotron text-center">
+        <h1>eeh-navigation</h1>
+
+        <p class="text-muted">An AngularJS menu module.</p>
+    </div>
+</header>
+
+<section class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Examples</h2>
+
+                <h3 class="section-subheading text-muted">
+                    Have a look at these examples of how to use the <a
+                    href="http://ethanhann.github.com/eeh-navigation">eeh-navigation</a> module.
+                </h3>
+            </div>
+        </div>
+        <div class="row" ng-repeat="exampleSet in exampleSets">
+            <div class="col-md-4 col-sm-6 portfolio-item"
+                ng-repeat="example in exampleSet">
+                <a ui-sref="{{ example.state }}" class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <span class="fa fa-search fa-3x"></span>
+                        </div>
+                    </div>
+                    <img ng-src="app/main/{{ example.image }}" class="img-responsive">
+                </a>
+
+                <div class="portfolio-caption">
+                    <h4>{{ example.title }}</h4>
+
+                    <p class="text-muted">
+                        <span ng-bind-html="example.description"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="text-muted">
+            author <a href="http://www.ethanhann.com" title="Author">Ethan Hann</a>
+        </p>
+    </div>
+</footer>

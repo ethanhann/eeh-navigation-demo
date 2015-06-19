@@ -5,10 +5,14 @@
     "jquery": "~2.1.1",
     "angular-resource": ">=1.3",
     "bootstrap-sass": "~3.3.4",
-    "eeh-navigation": "4.0.0-beta3",
+    "eeh-navigation": "4.0.0",
     "font-awesome": "~4.3.0",
     "superfish": "~1.7.5",
-    "metisMenu": "~2.0.2"
+    "metisMenu": "~2.0.2",
+    "google-code-prettify": "~1.0.4",
+    "eeh-superfish": "~0.2.1",
+    "eeh-metis-menu": "~0.1.0",
+    "angular-sanitize": "~1.4.1"
   },
   "devDependencies": {
     "angular-mocks": ">=1.3"

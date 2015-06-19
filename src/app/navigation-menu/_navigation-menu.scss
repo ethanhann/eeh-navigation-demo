@@ -1,0 +1,22 @@
+.navigation-menu {
+
+    ul {
+        list-style: none;
+        li > a {
+            position: relative;
+            display: block;
+            padding: 5px 15px;
+
+            &:focus, &:hover {
+                text-decoration: none;
+                background-color: #eeeeee;
+            }
+        }
+    }
+
+    > ul {
+        border: solid 1px #dddddd;
+        background: #ffffff;
+        padding: 1em;
+    }
+}

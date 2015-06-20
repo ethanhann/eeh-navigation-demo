@@ -4,7 +4,7 @@ angular.module('demo').directive('navPills', function () {
     return {
         restrict: 'A',
         link: function (scope, element) {
-            element.find('> ul').addClass('nav nav-pills');
+            element.find('> ul').addClass('nav nav-pills nav-stacked');
         }
     };
 });

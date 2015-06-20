@@ -36,6 +36,10 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             url: '/navigation-menu-with-metis-menu',
             templateUrl: 'app/navigation-menu/metis-menu.html'
         })
+        .state('demo.layout.navigationMenuSlideout', {
+            url: '/navigation-menu-with-slideout',
+            templateUrl: 'app/navigation-menu/slideout.html'
+        })
         .state('demo.navigation', {
             abstract: true,
             controller: 'NavigationController',
@@ -256,8 +260,7 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
 
     eehNavigationProvider
         .menuItem('menuThree.examples', {
-            text: 'Examples',
-            iconClass: 'glyphicon-list',
+            text: 'All Examples',
             state: 'demo.layout.main'
         })
         .menuItem('menuThree.navigationMenu', {
@@ -271,6 +274,10 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
         .menuItem('menuThree.navigationMenuMetisMenu', {
             text: 'metisMenu Menu',
             state: 'demo.layout.navigationMenuMetisMenu'
+        })
+        .menuItem('menuThree.navigationMenuSlideout', {
+            text: 'Slideout.js Menu',
+            state: 'demo.layout.navigationMenuSlideout'
         })
         .menuItem('menuThree.adminDashboard', {
             text: 'Bootstrap Navbar and Sidebar',

@@ -1,14 +1,23 @@
+$metis-menu-bg: #333 !default;
+$metis-menu-bg2: #222 !default;
+$metis-menu-active-link-color: #C00 !default;
+$metis-menu-link-color: #FFF !default;
+$metis-menu-border: solid 1px #222 !default;
+
 .metis-menu-vertical {
+    background: $metis-menu-bg;
+    border-right: solid 1px #dddddd;
+
     .sidebar {
         display: block;
         float: left;
         width: 250px;
-        background: #333;
+        background: $metis-menu-bg;
     }
     .sidebar-nav {
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-        background-image: -webkit-linear-gradient(left, color-stop(#333333 10px), color-stop(#222222 10px));
-        background-image: linear-gradient(to right, #333333 10px, #222222 10px);
+        background-image: -webkit-linear-gradient(left, color-stop($metis-menu-bg 10px), color-stop($metis-menu-bg2 10px));
+        background-image: linear-gradient(to right, $metis-menu-bg 10px, $metis-menu-bg2 10px);
         background-repeat: repeat-x;
         //filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ff222222', GradientType=1);
     }
@@ -25,20 +34,19 @@
     }
     .sidebar-nav ul a {
         padding: 10px 20px;
-        color: #aaa;
+        color: $metis-menu-link-color;
         border-top: 1px solid rgba(0, 0, 0, 0.3);
-        box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
-        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+        //border-top: $metis-menu-border;
     }
     .sidebar-nav ul a:hover, .sidebar-nav ul a:focus, .sidebar-nav ul a:active {
-        color: #fff;
+        color: $metis-menu-active-link-color;
         text-decoration: none;
     }
     .sidebar-nav ul ul a {
         padding: 10px 30px;
         background-color: rgba(255, 255, 255, 0.1);
     }
-    .sidebar-nav ul ul a:hover, .sidebar-nav ul ul a:focus, .sidebar-nav ul ul a:active {
+    .sidebar-nav ul ul li:hover, .sidebar-nav ul ul li:focus, .sidebar-nav ul ul li:active {
         background-color: rgba(255, 255, 255, 0.2);
     }
     .sidebar-nav-item {
@@ -64,14 +72,14 @@
         display: block;
         padding-top: 5px;
         padding-bottom: 5px;
-        color: #333;
+        color: $metis-menu-bg;
         text-decoration: none;
         outline: 0 none;
     }
 
     ul:before {
         position: absolute;
-        border-left: 1px dotted #333;
+        border-left: 1px dotted $metis-menu-bg;
         content: "";
         width: 30px;
         top: 25px;
@@ -81,7 +89,7 @@
 
     ul > li:before {
         position: absolute;
-        border-top: 1px dotted #333;
+        //border-top: 1px dotted $metis-menu-bg;
         content: "";
         width: 30px;
         top: 13px;

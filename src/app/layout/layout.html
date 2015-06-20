@@ -1,25 +1,48 @@
-<header>
-    <div class="jumbotron text-center">
-        <h1><a ng-href="https://ethanhann.github.io/eeh-navigation">eeh-navigation</a></h1>
-        <p class="text-muted">An AngularJS menu module.</p>
-        <div>
-            Version 4.0.0 &nbsp;&nbsp;·&nbsp;&nbsp;
-            <a href="https://github.com/ethanhann/eeh-navigation">GitHub Project</a> &nbsp;&nbsp;·&nbsp;&nbsp;
-            <a href="https://github.com/ethanhann/eeh-navigation/tree/3.3.0/doc">Old 3.3.0 Docs</a>
-        </div>
-    </div>
-</header>
+<eeh-slideout is-open="slideOutMenuIsOpen" panel-selector="'#panel'" menu-selector="'#menu'">
+    <nav id="menu">
+        <eeh-navigation-menu menu-name="'menuThree'" nav-pills></eeh-navigation-menu>
+    </nav>
 
-<section class="portfolio">
-    <div class="container">
-        <ui-view></ui-view>
-    </div>
-</section>
+    <main id="panel">
+        <nav class="navbar navbar-default navbar-examples">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="btn btn-primary navbar-btn"
+                            ng-click="slideOutMenuIsOpen = !slideOutMenuIsOpen">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
 
-<footer>
-    <div class="container">
-        <p class="text-muted">
-            author <a href="http://www.ethanhann.com" title="Author">Ethan Hann</a>
-        </p>
-    </div>
-</footer>
+        <header>
+            <div class="jumbotron">
+                <div class="text-center">
+                    <h1><a ng-href="https://ethanhann.github.io/eeh-navigation">eeh-navigation</a></h1>
+
+                    <p class="text-muted">An AngularJS menu module.</p>
+
+                    <div>
+                        Version 4.0.0 &nbsp;&nbsp;·&nbsp;&nbsp;
+                        <a href="https://github.com/ethanhann/eeh-navigation">GitHub Project</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+                        <a href="https://github.com/ethanhann/eeh-navigation/tree/3.3.0/doc">Old 3.3.0 Docs</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="portfolio">
+            <div class="container">
+                <ui-view></ui-view>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p class="text-muted">
+                    author <a href="http://www.ethanhann.com" title="Author">Ethan Hann</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+</eeh-slideout>

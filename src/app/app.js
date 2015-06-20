@@ -3,6 +3,7 @@
 angular.module('demo', [
     'eehMetisMenu',
     'eehNavigation',
+    'eehSlideout',
     'eehSuperfish',
     'ngSanitize',
     'ui.bootstrap',

@@ -31,6 +31,12 @@ angular.module('demo')
                 state: 'demo.layout.navigationMenuSlideout',
                 title: 'metisMenu Menu',
                 description: 'Use <strong>eeh-navigation-menu</strong> with <a href="https://mango.github.io/slideout">Slideout.js</a>.'
+            },
+            {
+                image: 'navbar-and-metis-menu.png',
+                state: 'demo.layout.navigationMenuNavbar',
+                title: 'Bootstrap Navbar with Metis Menu',
+                description: 'Use <strong>eeh-navigation-navbar</strong> with <a href="https://github.com/onokumus/metisMenu">metisMenu</a>.'
             }
         ]];
     });

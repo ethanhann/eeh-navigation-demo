@@ -41,6 +41,10 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             url: '/navigation-menu-with-slideout',
             templateUrl: 'app/navigation-menu/slideout.html'
         })
+        .state('demo.layout.navigationMenuNavbar', {
+            url: '/navigation-menu-with-navbar',
+            templateUrl: 'app/navigation-menu/navbar.html'
+        })
         .state('demo.navigation', {
             abstract: true,
             controller: 'NavigationController',
@@ -280,11 +284,14 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             text: 'Slideout.js Menu',
             state: 'demo.layout.navigationMenuSlideout'
         })
+        .menuItem('menuThree.demo.layout.navigationMenuNavbar', {
+            text: 'Bootstrap Navbar with Metis Menu',
+            state: 'demo.navigation.home'
+        })
         .menuItem('menuThree.adminDashboard', {
             text: 'Bootstrap Navbar and Sidebar',
             state: 'demo.navigation.home'
-        })
-    ;
+        });
 
     $translateProvider
         .useSanitizeValueStrategy('escaped')

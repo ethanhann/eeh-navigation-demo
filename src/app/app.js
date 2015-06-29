@@ -284,9 +284,9 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             text: 'Slideout.js Menu',
             state: 'demo.layout.navigationMenuSlideout'
         })
-        .menuItem('menuThree.demo.layout.navigationMenuNavbar', {
-            text: 'Bootstrap Navbar with Metis Menu',
-            state: 'demo.navigation.home'
+        .menuItem('menuThree.navigationMenuNavbar', {
+            text: 'Bootstrap Navbar and metisMenu',
+            state: 'demo.layout.navigationMenuNavbar'
         })
         .menuItem('menuThree.adminDashboard', {
             text: 'Bootstrap Navbar and Sidebar',

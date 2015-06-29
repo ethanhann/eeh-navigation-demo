@@ -1,3 +1,5 @@
+@import "../variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
 .navbar-examples {
     margin-bottom: 0;
@@ -6,12 +8,34 @@
 
 header {
     .jumbotron {
+        background-color: $brand-primary;
         margin-bottom: 0;
 
-        h1 > a:focus,
-        h1 > a:hover {
-            text-decoration: none;
+        svg {
+            height: 160px;
+
+            g {
+                fill: $logo-fill;
+            }
         }
+
+        h1 {
+            a {
+                color: #fff;
+            }
+            a:focus,
+            a:hover {
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $link-hover-color;
+            }
+        }
+    }
+
+    .project-details {
+        padding: 15px 0;
     }
 }
 

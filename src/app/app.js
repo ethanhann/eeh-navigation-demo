@@ -5,11 +5,11 @@ angular.module('demo', [
     'eehNavigation',
     'eehSlideout',
     'eehSuperfish',
+    'hljs',
     'ngSanitize',
     'ui.bootstrap',
     'ui.router'
-]).config(['$stateProvider', '$translateProvider', '$urlRouterProvider', 'eehNavigationProvider',
-function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationProvider) {
+]).config(function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationProvider) {
     $urlRouterProvider.otherwise('/');
     $stateProvider
         .state('demo', {
@@ -296,6 +296,8 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
     $translateProvider
         .useSanitizeValueStrategy('escaped')
         .translations('en', {
+            'All Examples': 'All Examples',
+            'Other Examples': 'Other Examples',
             'Blank': 'Blank',
             'Home': 'Home',
             'Click': 'Click',
@@ -316,6 +318,8 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             'Knight': 'Knight'
         })
         .translations('de', {
+            'All Examples': 'Alle Beispiele',
+            'Other Examples': 'Andere Beispiele',
             'Blank': 'Leer',
             'Home': 'Zuhause',
             'Click': 'Klicken',
@@ -336,5 +340,5 @@ function ($stateProvider, $translateProvider, $urlRouterProvider, eehNavigationP
             'Knight': 'Ritter'
         });
     $translateProvider.preferredLanguage('en');
-}]);
+});
 

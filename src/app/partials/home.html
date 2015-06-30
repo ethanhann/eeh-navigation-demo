@@ -4,3 +4,16 @@
 <p>A demo of the Bootstrap <a href="http://www.ethanhann.com/eeh-navigation/#/docs/eeh-navigation-navbar">eeh-navigation-navbar</a>
     and <a href="http://www.ethanhann.com/eeh-navigation/#/docs/eeh-navigation-sidebar">eeh-navigation-sidebar</a> directives
     provided by the <a href="http://www.ethanhann.com/eeh-navigation">eeh-navigation</a> AngularJS menu module.</p>
+
+<h3>Directives w/ Configuration</h3>
+<div hljs no-escape language="html">
+&lt;eeh-navigation-navbar
+    menu-name="'menuOne'"
+    brand-text="navbarBrand.text"
+    brand-state="navbarBrand.state">&lt;/eeh-navigation-navbar&gt;
+
+&lt;eeh-navigation-sidebar menu-name="'menuTwo'"
+                        search-input-submit="searchSubmit"&gt;
+    &lt;ui-view&gt;&lt;/ui-view&gt;
+&lt;/eeh-navigation-sidebar&gt;
+</div>

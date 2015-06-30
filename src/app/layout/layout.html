@@ -18,15 +18,18 @@
         <header class="text-center">
             <div class="jumbotron">
                 <div ng-include="'app/layout/logo.svg'"></div>
-                <h1><a ui-sref="demo.layout.main">eeh-navigation&nbsp;·&nbsp;examples</a></h1>
+                <h1><a ui-sref="demo.layout.main">
+                    <span class="hidden-xs">eeh-navigation · examples</span>
+                    <span class="visible-xs">eeh-navigation <br> examples</span>
+                </a></h1>
                 <p>An AngularJS menu module.</p>
             </div>
 
-            <div class="project-details">
-                Version 4.1.1 &nbsp;&nbsp;·&nbsp;&nbsp;
-                <a href="https://github.com/ethanhann/eeh-navigation">GitHub Project</a> &nbsp;&nbsp;·&nbsp;&nbsp;
-                <a href="https://github.com/ethanhann/eeh-navigation/tree/3.3.0/doc">Old 3.3.0 Docs</a>
-            </div>
+            <ul class="project-details list-inline">
+                <li><span>Version 4.1.1</span></li>
+                <li><a href="https://github.com/ethanhann/eeh-navigation">GitHub Project</a></li>
+                <li><a href="https://github.com/ethanhann/eeh-navigation/tree/3.3.0/doc">Old 3.3.0 Docs</a></li>
+            </ul>
         </header>
 
         <section class="portfolio">

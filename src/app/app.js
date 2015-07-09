@@ -5,6 +5,7 @@ angular.module('demo', [
     'eehNavigation',
     'eehSlideout',
     'eehSuperfish',
+    'eehTuxedoMenu',
     'hljs',
     'ngSanitize',
     'ui.bootstrap',
@@ -36,6 +37,10 @@ angular.module('demo', [
         .state('demo.layout.navigationMenuMetisMenu', {
             url: '/navigation-menu-with-metis-menu',
             templateUrl: 'app/navigation-menu/metis-menu.html'
+        })
+        .state('demo.layout.navigationMenuTuxedoMenu', {
+            url: '/navigation-menu-with-tuxedo-menu',
+            templateUrl: 'app/navigation-menu/tuxedo-menu.html'
         })
         .state('demo.layout.navigationMenuSlideout', {
             url: '/navigation-menu-with-slideout',
@@ -279,6 +284,10 @@ angular.module('demo', [
         .menuItem('menuThree.navigationMenuMetisMenu', {
             text: 'metisMenu Menu',
             state: 'demo.layout.navigationMenuMetisMenu'
+        })
+        .menuItem('menuThree.navigationMenuTuxedoMenu', {
+            text: 'Tuxedo Menu',
+            state: 'demo.layout.navigationMenuTuxedoMenu'
         })
         .menuItem('menuThree.navigationMenuSlideout', {
             text: 'Slideout.js Menu',

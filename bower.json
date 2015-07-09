@@ -13,6 +13,7 @@
     "eeh-metis-menu": "~0.2.0",
     "angular-sanitize": "~1.4.1",
     "eeh-slideout": "~0.1.0",
+    "eeh-tuxedo-menu": "~0.1.0",
     "angular-highlightjs": "~0.4.1"
   },
   "devDependencies": {

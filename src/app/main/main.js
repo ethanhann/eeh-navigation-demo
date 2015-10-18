@@ -29,7 +29,7 @@ angular.module('demo')
             {
                 image: 'slideout.png',
                 state: 'demo.layout.navigationMenuSlideout',
-                title: 'metisMenu Menu',
+                title: 'Slideout.js Menu',
                 description: 'Use <strong>eeh-navigation-menu</strong> with <a href="https://mango.github.io/slideout">Slideout.js</a>.'
             },
             {

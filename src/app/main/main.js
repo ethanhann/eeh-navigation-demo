@@ -3,6 +3,12 @@ angular.module('demo')
         'use strict';
         $scope.exampleSets = [[
             {
+                image: 'tuxedo-menu.png',
+                state: 'demo.layout.navigationMenuTuxedoMenu',
+                title: 'Tuxedo Menu',
+                description: 'Use <strong>eeh-navigation-menu</strong> with <a href="http://beekmanlabs.com/tuxedo-menu/demo/">Tuxedo Menu</a>.'
+            },
+            {
                 image: 'navbar-sidebar.png',
                 state: 'demo.navigation.home',
                 title: 'Bootstrap Navbar and Sidebar',
@@ -13,13 +19,13 @@ angular.module('demo')
                 state: 'demo.layout.navigationMenu',
                 title: 'Framework-Agnostic Menu',
                 description: 'Use <strong>eeh-navigation-menu</strong> to build a custom menu.'
-            },
-            {
+            }],
+            [{
                 image: 'superfish.png',
                 state: 'demo.layout.navigationMenuSuperfish',
                 title: 'Superfish Menu',
                 description: 'Use <strong>eeh-navigation-menu</strong> with <a href="https://github.com/joeldbirch/superfish">Superfish</a>.'
-            }], [
+            },
             {
                 image: 'metis-menu.png',
                 state: 'demo.layout.navigationMenuMetisMenu',
@@ -31,8 +37,8 @@ angular.module('demo')
                 state: 'demo.layout.navigationMenuSlideout',
                 title: 'Slideout.js Menu',
                 description: 'Use <strong>eeh-navigation-menu</strong> with <a href="https://mango.github.io/slideout">Slideout.js</a>.'
-            },
-            {
+            }],
+            [{
                 image: 'navbar-and-metis-menu.png',
                 state: 'demo.layout.navigationMenuNavbar',
                 title: 'Bootstrap Navbar with Metis Menu',

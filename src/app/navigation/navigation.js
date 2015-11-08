@@ -20,7 +20,7 @@ angular.module('demo')
     };
 
     $scope.navbarBrand = {
-        src: 'favicon.ico',
+        src: 'app/navigation/logo-alt.png',
         text: 'eeh-navigation Demo',
         state: 'demo.layout.main'
     };

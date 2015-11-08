@@ -13,6 +13,16 @@
     }
 }
 
+.navbar-brand {
+    padding: 0;
+
+    img {
+        height: 100%;
+        padding: 0 15px;
+        line-height: 49px;
+    }
+}
+
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
    all your sass files automatically */
 // injector

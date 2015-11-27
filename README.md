@@ -1,3 +1,3 @@
 # eeh-navigation-demo
 
-Demo for the [eeh-navigation](https://github.com/ethanhann/eeh-navigation) AngularJS menu module.
+The demos have been moved to codepen and are embedded in the [main docs site](https://github.com/ethanhann/eeh-navigation).
